@@ -1,0 +1,13 @@
+/**
+ * Triggers a browser download for a Blob returned by the backend CSV export endpoint.
+ */
+export const downloadBlob = (blob, filename) => {
+  const url = window.URL.createObjectURL(blob);
+  const link = document.createElement('a');
+  link.href = url;
+  link.setAttribute('download', filename);
+  document.body.appendChild(link);
+  link.click();
+  link.remove();
+  window.URL.revokeObjectURL(url);
+};
