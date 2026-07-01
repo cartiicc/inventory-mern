@@ -210,3 +210,5 @@ All endpoints (except register/login) require `Authorization: Bearer <token>`.
 
 ## 📝 License
 MIT — free to use as a portfolio project or starting point for your own SaaS.
+#   i n v e n t o r y - m e r n  
+ 
